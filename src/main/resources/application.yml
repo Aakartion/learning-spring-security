@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: security-demo
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userDB2
+    username: root
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    org:
+      springframework:
+        security: error
+
+jjt:
+  secreteKey: 809936f611def86b02ff4c8804e9fd9e7f6e0365a2b518949478cb4ef78461b97e54012925a3f9cd6051801e786fb520ecfbafc0994f4d04a804815581f34c52
